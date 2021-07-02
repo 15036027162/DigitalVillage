@@ -1,0 +1,258 @@
+*{box-sizing: border-box;}
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, img {margin: 0;padding: 0;}
+audio, canvas,img,svg,video {max-width: 100%;vertical-align: middle;}
+ul,li {list-style:none;}
+input,select,textarea{ font-size:100%;}
+input[type=text],input[type=password]{line-height: 28px\9;}
+table{border-collapse:collapse;border-spacing:0;}
+th{text-align:inherit;}
+q:before,q:after {content:'';}
+a{text-decoration:none;color: #666;}
+a:hover,a:focus {color: #666;text-decoration: none;}
+input{vertical-align: middle;border:0 none}
+img{vertical-align: middle}
+.hidden{display: none}
+.show{display: block}
+.clear:after{content: "";display: block;width: 0;height: 0;clear: both;}
+.fl-left{float: left}
+.fl-right{float:right}
+.po-relative{position: relative}
+.po-absolute{position:absolute}
+.po-fixed{position: fixed}
+.tx-center{text-align: center;}
+.tx-left{text-align: left;}
+.tx-right{text-align: right;}
+.dis-bl{display: block;}
+.flex{display: flex;flex-flow: row nowrap;justify-content: space-between;}
+.flexWrap{display: flex;flex-flow: row wrap;justify-content: space-between;}
+
+/*change修改*/
+.loginContent .el-form-item__content{
+  margin-left: 0 !important;
+}
+.fixedBg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.modelMess{
+  width: 400px;
+  padding: 20px 50px;
+  background: #fff;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modelMess .modelTitle{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.modelMess .iconCLose{
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.modelMess .modelNum{
+  margin-bottom: 20px;
+}
+.modelMess .Modelcode{
+  margin-left: 10px;
+}
+/*.el-select{
+  margin-right: 5px;
+}*/
+.el-table td, .el-table th.is-leaf{
+  text-align: center !important;
+}
+.el-table th{
+  color: #000 !important;
+  background: #ddd !important;
+}
+.el-table--border:after,
+.el-table--group:after,
+.el-table:before {
+  background-color: #a4a4a9 !important;
+}
+.el-table--border,
+.el-table--group {
+  border-color: #a4a4a9 !important;
+}
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: 1px solid #a4a4a9 !important;
+}
+.el-table--border th,
+.el-table--border th.gutter:last-of-type {
+  border-bottom: 1px solid #a4a4a9 !important;
+}
+.el-table--border td,
+.el-table--border th {
+  border-right: none !important;
+  border-left: 1px solid #a4a4a9 !important;
+}
+.el-table--border td:first-child,
+.el-table--border th:first-child {
+  border-left: none !important;
+}
+/*.el-table td{
+  padding: 0 !important;
+}*/
+.el-table .el-button{
+  padding: 0 !important;
+}
+.el-date-editor .el-range-separator{
+  padding: 0 !important;
+}
+.el-table th.gutter {
+  display: table-cell !important;
+}
+
+.el-table colgroup.gutter {
+  display: table-cell !important;
+}
+
+.el-table tr td .cell{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;      /*可以显示的行数，超出部分用...表示 */
+  -webkit-box-orient: vertical;
+}
+
+/*个人信息*/
+.userHeader{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  border-left: 4px solid #666;
+  padding-left: 10px;
+}
+.userList{
+  margin-bottom: 50px;
+}
+.userList li{
+  margin-bottom: 20px;
+}
+.userList li label{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 20px;
+}
+.userList li .changeBtn{
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+/*header右侧个人中心下拉*/
+.headerRight .el-dropdown-link{
+  cursor: pointer;
+}
+
+/*成员管理隐藏信息*/
+.userMember{
+  width: 300px;
+  padding: 10px 20px;
+  background: #e3e3e3;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+.userMember li{
+  margin-bottom: 10px;
+}
+
+/*新增页面*/
+.distibutionSetList li{
+  width: 800px;
+  background: #e3e3e3;
+  padding: 5px 0;
+  margin-top: 10px;
+}
+.distibutionSetList li p.billName{
+  display: inline-block;
+  width: 160px;
+  margin: 0 20px;
+  text-align: right;
+}
+.distibutionSetList li span.disTitle{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background:#409EFF;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  position: relative;
+  left: 20px;
+}
+.distibutionSetList li span.disClose{
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: 5px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.distibutionSetList li span.disCloseBill{
+  left: 0px;
+}
+.addBillNum{
+  color: #999;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.distibutionSetList li .el-form-item__error{
+  margin-left: 180px;
+}
+
+.honerRecognition .el-tag{
+  margin: 10px 10px 0 0;
+}
+
+.modelMessGroup{
+  width: 600px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.modelMessGroup .el-select{
+  width: 140px;
+}
+
+/*红黑榜列表*/
+.moreBill .el-table td{
+  height: 35px !important;
+}
+
+.radioAddScore .el-form-item__content{
+  margin-left: 0 !important;
+}
+
+.superviseSpan .el-form-item__label{
+  width: 70px !important;
+  padding: 0 !important;
+}
+.superviseSpan .el-form-item__content{
+  margin-left: 70px !important;
+}
+.textaresaContent .el-textarea__inner{
+  min-height: 200px !important;
+}
+
+.changeNum input::-webkit-outer-spin-button,
+.changeNum input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.changeNum input[type="number"]{
+  -moz-appearance: textfield;
+}
